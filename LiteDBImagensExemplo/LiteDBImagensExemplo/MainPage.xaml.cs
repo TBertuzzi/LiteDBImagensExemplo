@@ -24,8 +24,7 @@ namespace LiteDBImagensExemplo
             if (_dataBase.FileStorage.Exists(identificador))
             {
                 Stream stream = _dataBase.FileStorage.OpenRead(identificador);
-
-                imgExibir.Source = ImageSource.FromStream(() => stream);
+          //      imgExibir.Source = ImageSource.FromStream(() => stream);
             }
         }
 
