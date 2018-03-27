@@ -24,7 +24,7 @@ namespace LiteDBImagensExemplo
             if (_dataBase.FileStorage.Exists(identificador))
             {
                 Stream stream = _dataBase.FileStorage.OpenRead(identificador);
-          //      imgExibir.Source = ImageSource.FromStream(() => stream);
+                imgExibir.Source = ImageSource.FromStream(() => stream);
             }
         }
 
@@ -33,7 +33,7 @@ namespace LiteDBImagensExemplo
         {
 
             //Url para gravar a imagem
-            Stream stream = GetImageStreamFromUrl("");
+            Stream stream = GetImageStreamFromUrl("https://github.com/TBertuzzi/LiteDBImagensExemplo/blob/master/Resources/kirby.jpg?raw=true");
 
             //Se existir a Stream
             if (stream != null)
@@ -44,6 +44,7 @@ namespace LiteDBImagensExemplo
                     _dataBase.FileStorage.Delete(identificador);
                 }
                 _dataBase.FileStorage.Upload(identificador, "Teste", stream);
+
             }
 
         }

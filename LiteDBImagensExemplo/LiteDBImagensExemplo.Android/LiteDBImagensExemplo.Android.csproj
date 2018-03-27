@@ -28,6 +28,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <AndroidTlsProvider>btls</AndroidTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -85,7 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LiteDBImagensExemplo\LiteDBImagensExemplo.csproj">
-      <Project>{908A555A-9A4C-4055-9FDF-A0B80D6E6F7B}</Project>
+      <Project>{FB3D1603-4655-4890-8BA9-A9E4E9B10970}</Project>
       <Name>LiteDBImagensExemplo</Name>
     </ProjectReference>
   </ItemGroup>
